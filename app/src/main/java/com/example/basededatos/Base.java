@@ -14,7 +14,11 @@ public class Base extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL("CREATE TABLE basesita (" +
+                "clave INT PRIMARY KEY," +
+                "descripcion TEXT," +
+                "precio INT" +
+                ")");
     }
 
     @Override

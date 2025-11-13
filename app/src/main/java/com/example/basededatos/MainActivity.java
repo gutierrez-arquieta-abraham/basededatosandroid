@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         String cadenita = ((Button)v).getText().toString();
-        if (v.getId()==R.id.altas){
+        if (cadenita.equals("Altas")) {
             etcodigo.setEnabled(true);
             etdescripcion.setEnabled(true);
             etprecio.setEnabled(true);
